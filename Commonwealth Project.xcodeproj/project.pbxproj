@@ -103,6 +103,8 @@
 		0ED3BDA52581ED7F008AF9FD /* ReadEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDA42581ED7F008AF9FD /* ReadEmployeeAPIService.swift */; };
 		0ED3BDAA2581EE3F008AF9FD /* UpdateEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDA92581EE3F008AF9FD /* UpdateEmployeeAPIService.swift */; };
 		0ED3BDAF2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */; };
+		0ED3BDB72581EF46008AF9FD /* CreateEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */; };
+		0ED3BDB82581EF46008AF9FD /* CreateEmployeeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */; };
 		55C099809D5243FA4E1D9CF6 /* Pods_Commonwealth_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */; };
 		65B5236F996BE399FC60E33E /* Pods_Commonwealth_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8F4DCC69B0914BF1A6F680 /* Pods_Commonwealth_ProjectTests.framework */; };
 		F06FFC1F8A94A4CC37D61A7F /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE02E88D7C5B02BFFE830D8 /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework */; };
@@ -229,6 +231,8 @@
 		0ED3BDA42581ED7F008AF9FD /* ReadEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmployeeAPIService.swift; sourceTree = "<group>"; };
 		0ED3BDA92581EE3F008AF9FD /* UpdateEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmployeeAPIService.swift; sourceTree = "<group>"; };
 		0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmployeeAPIService.swift; sourceTree = "<group>"; };
+		0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeVC.swift; sourceTree = "<group>"; };
+		0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateEmployeeVC.xib; sourceTree = "<group>"; };
 		111CB53C204096860D0A24AA /* Pods-Commonwealth Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth Project.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth Project/Pods-Commonwealth Project.release.xcconfig"; sourceTree = "<group>"; };
 		1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commonwealth_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD5C33A5053F4475B1913D1 /* Pods-Commonwealth ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth ProjectTests/Pods-Commonwealth ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -403,6 +407,7 @@
 		0ED3BCD32581E9F3008AF9FD /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				0ED3BDB32581EF18008AF9FD /* Employee */,
 				0ED3BCD42581E9F3008AF9FD /* Order */,
 				0ED3BCF42581E9F3008AF9FD /* Main */,
 			);
@@ -777,6 +782,23 @@
 			path = Delete;
 			sourceTree = "<group>";
 		};
+		0ED3BDB32581EF18008AF9FD /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDB42581EF34008AF9FD /* Create Employee */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		0ED3BDB42581EF34008AF9FD /* Create Employee */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */,
+				0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */,
+			);
+			path = "Create Employee";
+			sourceTree = "<group>";
+		};
 		2CE9CC03138EFAE7C1F2DA24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,6 +942,7 @@
 				0ED3BD312581E9F3008AF9FD /* ArticleVC.xib in Resources */,
 				0ED3BD202581E9F3008AF9FD /* ListOrderVC.xib in Resources */,
 				0ED3BD432581E9F3008AF9FD /* ListCategoryVC.xib in Resources */,
+				0ED3BDB82581EF46008AF9FD /* CreateEmployeeVC.xib in Resources */,
 				0ED3BD212581E9F3008AF9FD /* OrderDetailStatusCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,6 +1077,7 @@
 				0ED3BD1D2581E9F3008AF9FD /* ListOrderRouter.swift in Sources */,
 				0ED3BD322581E9F3008AF9FD /* ArticleVC.swift in Sources */,
 				0ED3BD672581EA06008AF9FD /* DateFormatter.swift in Sources */,
+				0ED3BDB72581EF46008AF9FD /* CreateEmployeeVC.swift in Sources */,
 				0ED3BCC62581E9EB008AF9FD /* HeadlineAPI.swift in Sources */,
 				0ED3BCBE2581E9EB008AF9FD /* MedicationDetailResponse.swift in Sources */,
 				0ED3BD6D2581EA06008AF9FD /* Animator.swift in Sources */,
