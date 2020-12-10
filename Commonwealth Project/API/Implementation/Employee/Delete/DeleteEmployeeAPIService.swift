@@ -1,21 +1,21 @@
 //
-//  MedicationDetailAPIService.swift
+//  DeleteEmployeeAPIService.swift
 //  Commonwealth Project
 //
-//  Created by Nur Irfan Pangestu on 03/12/20.
+//  Created by Nur Irfan Pangestu on 10/12/20.
 //
 
 import Foundation
 
-class MedicationDetailAPIService: APIService {
+class DeleteEmployeeAPIService: APIService {
     
-    typealias T = MedicationDetailResponse
+    typealias T = CreateEmployeeResponse
     
     var id = 0
     
-    class GetMedicationDetail: HTTPRequest {
+    class PostDeleteEmployee: HTTPRequest {
         var method = HTTPMethod.GET
-        var path = "/medications/"
+        var path = "/delete/"
         var parameters: [String : Any]
         var apiVersion = ApiVersion.v1
         var authentication = HTTPAuth.tokenType.basic
@@ -34,8 +34,8 @@ class MedicationDetailAPIService: APIService {
         self.id = id
     }
     
-    func request(parameters: [String : Any], onSuccess: @escaping (MedicationDetailResponse) -> Void, onError: @escaping (HTTPError) -> Void) {
-        self.httpClient.send(request: GetMedicationDetail(parameters: parameters, id: self.id)) { (data) in
+    func request(parameters: [String : Any], onSuccess: @escaping (CreateEmployeeResponse) -> Void, onError: @escaping (HTTPError) -> Void) {
+        self.httpClient.send(request: PostDeleteEmployee(parameters: parameters, id: self.id)) { (data) in
             do {
                 let model = try self.parse(data)
                 onSuccess(model)

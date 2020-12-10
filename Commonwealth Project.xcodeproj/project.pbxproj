@@ -96,6 +96,13 @@
 		0ED3BD712581EA06008AF9FD /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD5F2581EA06008AF9FD /* Routerable.swift */; };
 		0ED3BD722581EA06008AF9FD /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD602581EA06008AF9FD /* Viewable.swift */; };
 		0ED3BD732581EA06008AF9FD /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD612581EA06008AF9FD /* AnimationFactory.swift */; };
+		0ED3BD862581EB97008AF9FD /* CreateEmployeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD852581EB97008AF9FD /* CreateEmployeeResponse.swift */; };
+		0ED3BD8B2581EBA4008AF9FD /* CreateEmployeeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD8A2581EBA4008AF9FD /* CreateEmployeeRequest.swift */; };
+		0ED3BD902581EBB6008AF9FD /* ReadEmployeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD8F2581EBB6008AF9FD /* ReadEmployeeResponse.swift */; };
+		0ED3BD952581EBE3008AF9FD /* CreateEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BD942581EBE3008AF9FD /* CreateEmployeeAPIService.swift */; };
+		0ED3BDA52581ED7F008AF9FD /* ReadEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDA42581ED7F008AF9FD /* ReadEmployeeAPIService.swift */; };
+		0ED3BDAA2581EE3F008AF9FD /* UpdateEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDA92581EE3F008AF9FD /* UpdateEmployeeAPIService.swift */; };
+		0ED3BDAF2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */; };
 		55C099809D5243FA4E1D9CF6 /* Pods_Commonwealth_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */; };
 		65B5236F996BE399FC60E33E /* Pods_Commonwealth_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8F4DCC69B0914BF1A6F680 /* Pods_Commonwealth_ProjectTests.framework */; };
 		F06FFC1F8A94A4CC37D61A7F /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE02E88D7C5B02BFFE830D8 /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework */; };
@@ -215,6 +222,13 @@
 		0ED3BD5F2581EA06008AF9FD /* Routerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		0ED3BD602581EA06008AF9FD /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		0ED3BD612581EA06008AF9FD /* AnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFactory.swift; sourceTree = "<group>"; };
+		0ED3BD852581EB97008AF9FD /* CreateEmployeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeResponse.swift; sourceTree = "<group>"; };
+		0ED3BD8A2581EBA4008AF9FD /* CreateEmployeeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeRequest.swift; sourceTree = "<group>"; };
+		0ED3BD8F2581EBB6008AF9FD /* ReadEmployeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmployeeResponse.swift; sourceTree = "<group>"; };
+		0ED3BD942581EBE3008AF9FD /* CreateEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeAPIService.swift; sourceTree = "<group>"; };
+		0ED3BDA42581ED7F008AF9FD /* ReadEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadEmployeeAPIService.swift; sourceTree = "<group>"; };
+		0ED3BDA92581EE3F008AF9FD /* UpdateEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmployeeAPIService.swift; sourceTree = "<group>"; };
+		0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmployeeAPIService.swift; sourceTree = "<group>"; };
 		111CB53C204096860D0A24AA /* Pods-Commonwealth Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth Project.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth Project/Pods-Commonwealth Project.release.xcconfig"; sourceTree = "<group>"; };
 		1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commonwealth_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD5C33A5053F4475B1913D1 /* Pods-Commonwealth ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth ProjectTests/Pods-Commonwealth ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +335,7 @@
 		0ED3BCA02581E9EB008AF9FD /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				0ED3BD802581EB50008AF9FD /* Employee */,
 				0ED3BCA12581E9EB008AF9FD /* List of Medications */,
 				0ED3BCA42581E9EB008AF9FD /* Medication Detail */,
 				0ED3BCA82581E9EB008AF9FD /* Source */,
@@ -716,6 +731,52 @@
 			path = Viper;
 			sourceTree = "<group>";
 		};
+		0ED3BD802581EB50008AF9FD /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BD842581EB72008AF9FD /* Delete */,
+				0ED3BD832581EB69008AF9FD /* Update */,
+				0ED3BD822581EB62008AF9FD /* Read */,
+				0ED3BD812581EB5A008AF9FD /* Create */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		0ED3BD812581EB5A008AF9FD /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BD852581EB97008AF9FD /* CreateEmployeeResponse.swift */,
+				0ED3BD8A2581EBA4008AF9FD /* CreateEmployeeRequest.swift */,
+				0ED3BD942581EBE3008AF9FD /* CreateEmployeeAPIService.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		0ED3BD822581EB62008AF9FD /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BD8F2581EBB6008AF9FD /* ReadEmployeeResponse.swift */,
+				0ED3BDA42581ED7F008AF9FD /* ReadEmployeeAPIService.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		0ED3BD832581EB69008AF9FD /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDA92581EE3F008AF9FD /* UpdateEmployeeAPIService.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		0ED3BD842581EB72008AF9FD /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */,
+			);
+			path = Delete;
+			sourceTree = "<group>";
+		};
 		2CE9CC03138EFAE7C1F2DA24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1007,11 +1068,14 @@
 				0ED3BCCA2581E9EB008AF9FD /* HTTPClient.swift in Sources */,
 				0ED3BD222581E9F3008AF9FD /* OrderDetailStatusCell.swift in Sources */,
 				0ED3BD712581EA06008AF9FD /* Routerable.swift in Sources */,
+				0ED3BDAF2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift in Sources */,
 				0ED3BD382581E9F3008AF9FD /* ListSourceVC.swift in Sources */,
 				0ED3BD2E2581E9F3008AF9FD /* DetailArticlePresenter.swift in Sources */,
 				0E5DB5692581E8E500397EB2 /* Commonwealth_Project.xcdatamodeld in Sources */,
+				0ED3BDA52581ED7F008AF9FD /* ReadEmployeeAPIService.swift in Sources */,
 				0ED3BD262581E9F3008AF9FD /* OrderDetailPrescriptionCell.swift in Sources */,
 				0ED3BD2F2581E9F3008AF9FD /* DetailArticleRouter.swift in Sources */,
+				0ED3BD862581EB97008AF9FD /* CreateEmployeeResponse.swift in Sources */,
 				0ED3BD632581EA06008AF9FD /* DataModuleFactory.swift in Sources */,
 				0ED3BD402581E9F3008AF9FD /* ListCategoryInteractor.swift in Sources */,
 				0ED3BD352581E9F3008AF9FD /* ListSourcePresenter.swift in Sources */,
@@ -1025,10 +1089,12 @@
 				0ED3BCC32581E9EB008AF9FD /* SourceBody.swift in Sources */,
 				0ED3BCBC2581E9EB008AF9FD /* ListOfMedicationResponse.swift in Sources */,
 				0ED3BD2C2581E9F3008AF9FD /* OrderDetailView.swift in Sources */,
+				0ED3BD8B2581EBA4008AF9FD /* CreateEmployeeRequest.swift in Sources */,
 				0ED3BD3D2581E9F3008AF9FD /* ListArticleVC.swift in Sources */,
 				0ED3BD282581E9F3008AF9FD /* OrderDetailInteractor.swift in Sources */,
 				0ED3BD6F2581EA06008AF9FD /* Interactorable.swift in Sources */,
 				0ED3BD392581E9F3008AF9FD /* ListArticleInteractor.swift in Sources */,
+				0ED3BD952581EBE3008AF9FD /* CreateEmployeeAPIService.swift in Sources */,
 				0ED3BD442581E9F3008AF9FD /* ListCategoryVC.swift in Sources */,
 				0ED3BD332581E9F3008AF9FD /* ListSourceRouter.swift in Sources */,
 				0ED3BCC72581E9EB008AF9FD /* HeadlineBody.swift in Sources */,
@@ -1043,6 +1109,7 @@
 				0ED3BD652581EA06008AF9FD /* PreferenceKey.swift in Sources */,
 				0ED3BD192581E9F3008AF9FD /* OrderListCell.swift in Sources */,
 				0ED3BD3A2581E9F3008AF9FD /* ListArticleRouter.swift in Sources */,
+				0ED3BD902581EBB6008AF9FD /* ReadEmployeeResponse.swift in Sources */,
 				0ED3BCCB2581E9EB008AF9FD /* HTTPError.swift in Sources */,
 				0ED3BD662581EA06008AF9FD /* CurrencyFormatter.swift in Sources */,
 				0ED3BCC42581E9EB008AF9FD /* HeadlineResponse.swift in Sources */,
@@ -1053,6 +1120,7 @@
 				0ED3BD3B2581E9F3008AF9FD /* ListArticlePresenter.swift in Sources */,
 				0ED3BD412581E9F3008AF9FD /* ListCategoryRouter.swift in Sources */,
 				0ED3BD1B2581E9F3008AF9FD /* ListOrderInteractor.swift in Sources */,
+				0ED3BDAA2581EE3F008AF9FD /* UpdateEmployeeAPIService.swift in Sources */,
 				0ED3BD642581EA06008AF9FD /* ModuleFactoryImpl.swift in Sources */,
 				0ED3BD692581EA06008AF9FD /* UIView+Extensions.swift in Sources */,
 				0ED3BCCD2581E9EB008AF9FD /* HTTPAuth.swift in Sources */,

@@ -1,19 +1,19 @@
 //
-//  ListOfMedicationAPIService.swift
+//  ReadEmployeeAPIService.swift
 //  Commonwealth Project
 //
-//  Created by Nur Irfan Pangestu on 03/12/20.
+//  Created by Nur Irfan Pangestu on 10/12/20.
 //
 
 import Foundation
 
-class ListOfMedicationAPIService: APIService {
+class ReadEmployeeAPIService: APIService {
     
-    typealias T = [ListOfMedication]
+    typealias T = [ReadEmployeeResponse]
     
-    private class GetListOfMedication: HTTPRequest {
+    private class GetReadEmployee: HTTPRequest {
         var method = HTTPMethod.GET
-        var path = "/medications"
+        var path = "/employees"
         var parameters: [String: Any]
         var apiVersion = ApiVersion.v1
         var authentication = HTTPAuth.tokenType.basic
@@ -30,8 +30,8 @@ class ListOfMedicationAPIService: APIService {
         self.httpCLient = httpClient
     }
     
-    func request(parameters: [String : Any], onSuccess: @escaping ([ListOfMedication]) -> Void, onError: @escaping (HTTPError) -> Void) {
-        self.httpCLient.send(request: GetListOfMedication(parameters: parameters)) { (data) in
+    func request(parameters: [String : Any], onSuccess: @escaping ([ReadEmployeeResponse]) -> Void, onError: @escaping (HTTPError) -> Void) {
+        self.httpCLient.send(request: GetReadEmployee(parameters: parameters)) { (data) in
             do {
                 let model = try self.parse(data)
                 onSuccess(model)

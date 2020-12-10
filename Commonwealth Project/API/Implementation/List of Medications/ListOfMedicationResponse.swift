@@ -1,7 +1,7 @@
 //
 //  ListOfMedicationResponse.swift
-//  ITMI Project
-//
+//  Commonwealth Project
+// 
 //  Created by Nur Irfan Pangestu on 03/12/20.
 //
 

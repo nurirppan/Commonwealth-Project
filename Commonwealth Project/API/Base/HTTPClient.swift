@@ -1,6 +1,6 @@
 //
 //  HTTPClient.swift
-//  ITMI Project
+//  Commonwealth Project
 //
 //  Created by Nur Irfan Pangestu on 29/11/20.
 //
@@ -37,17 +37,9 @@ protocol HTTPIdentifier {
 
 class BaseIdentifier: HTTPIdentifier {
     
-    //SOURCE CATEGORY
-//    #if DEBUG
-//        var baseUrl = URL(string: "https://newsapi.org/")!
-//    #else
-//        var baseUrl = URL(string: "https://newsapi.org/")!
-//    #endif
-    
-    // MEDICINS
         #if DEBUG
-            var baseUrl = URL(string: "https://private-anon-988cd29f17-mymed.apiary-mock.com/")!
+            var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
         #else
-            var baseUrl = URL(string: "https://private-anon-988cd29f17-mymed.apiary-mock.com/")!
+            var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
         #endif
 }
