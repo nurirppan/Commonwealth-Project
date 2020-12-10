@@ -181,7 +181,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.81199842690000001" green="0.83513683080000001" blue="0.92157465220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="W8o-mw-x8I" secondAttribute="trailing" id="4ja-va-CKC"/>
                             <constraint firstAttribute="trailing" secondItem="yTC-k9-gRK" secondAttribute="trailing" id="5CO-eu-keG"/>
@@ -202,6 +202,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.81199842690000001" green="0.83513683080000001" blue="0.92157465220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="Xil-H4-H6J" secondAttribute="bottom" constant="1" id="Gtc-h4-XPr"/>
                     <constraint firstItem="Xil-H4-H6J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="amT-ux-uSp"/>
@@ -210,6 +211,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="PxT-FC-bRR" id="S6o-cK-v4E"/>
+                <outlet property="btnEdit" destination="bFG-Ea-YP0" id="aIA-QC-tR5"/>
+                <outlet property="lblAge" destination="lxy-Eh-ka6" id="nZt-pM-Iqn"/>
+                <outlet property="lblId" destination="YhV-Zk-q1M" id="UVH-K5-BZ0"/>
+                <outlet property="lblName" destination="ilk-jm-qZc" id="ot5-6i-POE"/>
+                <outlet property="lblSalary" destination="H0C-VJ-zxF" id="TSj-kb-D74"/>
+                <outlet property="vwContainer" destination="H2p-sc-9uM" id="2MD-Gp-ky0"/>
+            </connections>
             <point key="canvasLocation" x="7.2463768115942031" y="141.29464285714286"/>
         </tableViewCell>
     </objects>

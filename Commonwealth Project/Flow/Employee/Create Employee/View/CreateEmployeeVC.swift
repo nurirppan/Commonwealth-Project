@@ -27,6 +27,8 @@ class CreateEmployeeVC: UIViewController {
     var salary: String { return self.tfSalary.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
     var age: String { return self.tfAge.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
     
+    var forms = [String: String]()
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -35,6 +37,7 @@ class CreateEmployeeVC: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         self.setupActions()
+        
     }
     
     private func setupUI() {
@@ -43,7 +46,21 @@ class CreateEmployeeVC: UIViewController {
     
     private func setupActions() {
         self.btnCreateEmployee.addTapGestureRecognizer {
-            print("btnCreateEmployee")
+            self.forms = [
+                "Nama Tidak Boleh Kosong" : self.name,
+                "Gaji Tidak Boleh Kosong" : self.salary,
+                "Umur Tidak Boleh Kosong" : self.age
+            ]
+            
+            for (error, value) in self.forms {
+                if value.isEmpty {
+                    self.showPopupError(error: error)
+                    break
+                }
+            }
+            
+            self.showPopupError(error: "Berhasil Simpan Data")
+            
         }
         
         self.btnShowAllEmployess.addTapGestureRecognizer {
@@ -57,8 +74,15 @@ class CreateEmployeeVC: UIViewController {
         hud.textLabel.text = "Loading"
     }
     
-    
+    private func showPopupError(error: String) {
+        let alert = UIAlertController(title: "Alert", message: error, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
 }
+
 
 extension CreateEmployeeVC {
     private func showLoading() {
