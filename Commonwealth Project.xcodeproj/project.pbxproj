@@ -105,6 +105,10 @@
 		0ED3BDAF2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */; };
 		0ED3BDB72581EF46008AF9FD /* CreateEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */; };
 		0ED3BDB82581EF46008AF9FD /* CreateEmployeeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */; };
+		0ED3BDBF2581F271008AF9FD /* CreateEmployeeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDBE2581F271008AF9FD /* CreateEmployeeInteractor.swift */; };
+		0ED3BDC42581F280008AF9FD /* CreateEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDC32581F280008AF9FD /* CreateEmployeeView.swift */; };
+		0ED3BDC92581F28A008AF9FD /* CreateEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDC82581F28A008AF9FD /* CreateEmployeePresenter.swift */; };
+		0ED3BDCE2581F292008AF9FD /* CreateEmployeeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BDCD2581F292008AF9FD /* CreateEmployeeRouter.swift */; };
 		55C099809D5243FA4E1D9CF6 /* Pods_Commonwealth_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */; };
 		65B5236F996BE399FC60E33E /* Pods_Commonwealth_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8F4DCC69B0914BF1A6F680 /* Pods_Commonwealth_ProjectTests.framework */; };
 		F06FFC1F8A94A4CC37D61A7F /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE02E88D7C5B02BFFE830D8 /* Pods_Commonwealth_Project_Commonwealth_ProjectUITests.framework */; };
@@ -233,6 +237,10 @@
 		0ED3BDAE2581EEAE008AF9FD /* DeleteEmployeeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmployeeAPIService.swift; sourceTree = "<group>"; };
 		0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeVC.swift; sourceTree = "<group>"; };
 		0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateEmployeeVC.xib; sourceTree = "<group>"; };
+		0ED3BDBE2581F271008AF9FD /* CreateEmployeeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeInteractor.swift; sourceTree = "<group>"; };
+		0ED3BDC32581F280008AF9FD /* CreateEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeView.swift; sourceTree = "<group>"; };
+		0ED3BDC82581F28A008AF9FD /* CreateEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeePresenter.swift; sourceTree = "<group>"; };
+		0ED3BDCD2581F292008AF9FD /* CreateEmployeeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeRouter.swift; sourceTree = "<group>"; };
 		111CB53C204096860D0A24AA /* Pods-Commonwealth Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth Project.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth Project/Pods-Commonwealth Project.release.xcconfig"; sourceTree = "<group>"; };
 		1E6579667E99E07BA523589A /* Pods_Commonwealth_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commonwealth_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD5C33A5053F4475B1913D1 /* Pods-Commonwealth ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commonwealth ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Commonwealth ProjectTests/Pods-Commonwealth ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -793,10 +801,30 @@
 		0ED3BDB42581EF34008AF9FD /* Create Employee */ = {
 			isa = PBXGroup;
 			children = (
-				0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */,
-				0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */,
+				0ED3BDBD2581F235008AF9FD /* Viper */,
+				0ED3BDBC2581F22D008AF9FD /* View */,
 			);
 			path = "Create Employee";
+			sourceTree = "<group>";
+		};
+		0ED3BDBC2581F22D008AF9FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDB52581EF46008AF9FD /* CreateEmployeeVC.swift */,
+				0ED3BDB62581EF46008AF9FD /* CreateEmployeeVC.xib */,
+				0ED3BDC32581F280008AF9FD /* CreateEmployeeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ED3BDBD2581F235008AF9FD /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3BDBE2581F271008AF9FD /* CreateEmployeeInteractor.swift */,
+				0ED3BDC82581F28A008AF9FD /* CreateEmployeePresenter.swift */,
+				0ED3BDCD2581F292008AF9FD /* CreateEmployeeRouter.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 		2CE9CC03138EFAE7C1F2DA24 /* Frameworks */ = {
@@ -1085,6 +1113,7 @@
 				0ED3BD702581EA06008AF9FD /* Presenterable.swift in Sources */,
 				0ED3BD362581E9F3008AF9FD /* ListSourceView.swift in Sources */,
 				0E5DB55F2581E8E500397EB2 /* AppDelegate.swift in Sources */,
+				0ED3BDBF2581F271008AF9FD /* CreateEmployeeInteractor.swift in Sources */,
 				0ED3BD1E2581E9F3008AF9FD /* ListOrderVC.swift in Sources */,
 				0ED3BD6A2581EA06008AF9FD /* String+Extensions.swift in Sources */,
 				0ED3BD722581EA06008AF9FD /* Viewable.swift in Sources */,
@@ -1100,6 +1129,7 @@
 				0ED3BD262581E9F3008AF9FD /* OrderDetailPrescriptionCell.swift in Sources */,
 				0ED3BD2F2581E9F3008AF9FD /* DetailArticleRouter.swift in Sources */,
 				0ED3BD862581EB97008AF9FD /* CreateEmployeeResponse.swift in Sources */,
+				0ED3BDC42581F280008AF9FD /* CreateEmployeeView.swift in Sources */,
 				0ED3BD632581EA06008AF9FD /* DataModuleFactory.swift in Sources */,
 				0ED3BD402581E9F3008AF9FD /* ListCategoryInteractor.swift in Sources */,
 				0ED3BD352581E9F3008AF9FD /* ListSourcePresenter.swift in Sources */,
@@ -1125,6 +1155,7 @@
 				0ED3BD422581E9F3008AF9FD /* ListCategoryView.swift in Sources */,
 				0ED3BCBB2581E9EB008AF9FD /* ListOfMedicationAPIService.swift in Sources */,
 				0ED3BD292581E9F3008AF9FD /* OrderDetailRouter.swift in Sources */,
+				0ED3BDCE2581F292008AF9FD /* CreateEmployeeRouter.swift in Sources */,
 				0ED3BD732581EA06008AF9FD /* AnimationFactory.swift in Sources */,
 				0ED3BD2B2581E9F3008AF9FD /* OrderDetailVC.swift in Sources */,
 				0ED3BD1F2581E9F3008AF9FD /* OrderListView.swift in Sources */,
@@ -1139,6 +1170,7 @@
 				0ED3BCC42581E9EB008AF9FD /* HeadlineResponse.swift in Sources */,
 				0ED3BD6E2581EA06008AF9FD /* ScheduleProvider.swift in Sources */,
 				0ED3BCC82581E9EB008AF9FD /* HTTPRequest.swift in Sources */,
+				0ED3BDC92581F28A008AF9FD /* CreateEmployeePresenter.swift in Sources */,
 				0ED3BCC22581E9EB008AF9FD /* SourceAPIImpl.swift in Sources */,
 				0ED3BD2D2581E9F3008AF9FD /* DetailArticleInteractor.swift in Sources */,
 				0ED3BD3B2581E9F3008AF9FD /* ListArticlePresenter.swift in Sources */,
