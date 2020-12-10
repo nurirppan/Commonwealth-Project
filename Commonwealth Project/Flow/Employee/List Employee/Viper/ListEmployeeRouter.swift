@@ -1,5 +1,5 @@
 //
-//  CreateEmployeeRouter.swift
+//  ListEmployeeRouter.swift
 //  Commonwealth Project
 //
 //  Created by Nur Irfan Pangestu on 10/12/20.
@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-struct CreateEmployeeRouterInput {
+struct ListEmployeeRouterInput {
     
-    private func view() -> CreateEmployeeVC {
-        let view = CreateEmployeeVC()
+    private func view() -> ListEmployeeVC {
+        let view = ListEmployeeVC()
 //        let service = ListOfMedicationAPIService(httpClient: HTTPService(identifier: BaseIdentifier()))
-        let interactor = CreateEmployeeInteractor()
-        let dependencies = CreateEmployeePresenterDependencies(interactor: interactor, router: CreateEmployeeRouterOutput(view))
-        let presenter = CreateEmployeePresenter(view: view, dependencies: dependencies)
+        let interactor = ListEmployeeInteractor()
+        let dependencies = ListEmployeePresenterDependencies(interactor: interactor, router: ListEmployeeRouterOutput(view))
+        let presenter = ListEmployeePresenter(view: view, dependencies: dependencies)
         view.presenter = presenter
         interactor.presenter = presenter
         return view
@@ -47,7 +47,7 @@ struct CreateEmployeeRouterInput {
     }
 }
 
-final class CreateEmployeeRouterOutput: Routerable {
+final class ListEmployeeRouterOutput: Routerable {
 
     private(set) weak var view: Viewable!
 
@@ -55,4 +55,5 @@ final class CreateEmployeeRouterOutput: Routerable {
         self.view = view
     }
     
+
 }
