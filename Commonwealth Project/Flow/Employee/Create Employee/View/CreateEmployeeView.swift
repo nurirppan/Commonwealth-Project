@@ -13,4 +13,6 @@ protocol CreateEmployeeViewInput: AnyObject {
 
 protocol CreateEmployeeViewOutput: AnyObject {
     func onShowAllEmployeeTapped()
+    func onShowAPIOne()
+    func onShowAPITwo()
 }

@@ -31,7 +31,7 @@ class ListOfMedicationAPIService: APIService {
     }
     
     func request(parameters: [String : Any], onSuccess: @escaping ([ListOfMedication]) -> Void, onError: @escaping (HTTPError) -> Void) {
-        self.httpCLient.send(request: GetListOfMedication(parameters: parameters)) { (data) in
+        self.httpCLient.sendTwo(request: GetListOfMedication(parameters: parameters)) { (data) in
             do {
                 let model = try self.parse(data)
                 onSuccess(model)

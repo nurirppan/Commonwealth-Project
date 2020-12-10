@@ -58,7 +58,7 @@ class HeadlineAPIService: APIService {
     }
     
     func request(parameters: [String : Any], onSuccess: @escaping (HeadlineResponse) -> Void, onError: @escaping (HTTPError) -> Void) {
-        self.httpClient.send(request: GetHeadlines(parameters: parameters)) { (data) in
+        self.httpClient.sendOne(request: GetHeadlines(parameters: parameters)) { (data) in
             do {
                 let model = try self.parse(data)
                 onSuccess(model)

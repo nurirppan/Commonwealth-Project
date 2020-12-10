@@ -33,13 +33,27 @@ extension APIService {
 
 protocol HTTPIdentifier {
     var baseUrl: URL { get }
+    var baseUrlOne: URL { get }
+    var baseUrlTwo: URL { get }
 }
 
 class BaseIdentifier: HTTPIdentifier {
     
-        #if DEBUG
-            var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
-        #else
-            var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
-        #endif
+    #if DEBUG
+        var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
+    #else
+        var baseUrl = URL(string: "http://dummy.restapiexample.com/api/")!
+    #endif
+    
+    #if DEBUG
+        var baseUrlOne = URL(string: "https://newsapi.org/")!
+    #else
+        var baseUrlOne = URL(string: "https://newsapi.org/")!
+    #endif
+    
+    #if DEBUG
+        var baseUrlTwo = URL(string: "https://private-anon-988cd29f17-mymed.apiary-mock.com/")!
+    #else
+        var baseUrlTwo = URL(string: "https://private-anon-988cd29f17-mymed.apiary-mock.com/")!
+    #endif
 }

@@ -22,6 +22,8 @@ class CreateEmployeeVC: UIViewController {
     @IBOutlet weak var tfAge: UITextField!
     @IBOutlet weak var btnCreateEmployee: UIButton!
     @IBOutlet weak var btnShowAllEmployess: UILabel!
+    @IBOutlet weak var btnApiOne: UIButton!
+    @IBOutlet weak var btnApiTwo: UIButton!
     
     var name: String { return self.tfName.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
     var salary: String { return self.tfSalary.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
@@ -65,6 +67,14 @@ class CreateEmployeeVC: UIViewController {
         
         self.btnShowAllEmployess.addTapGestureRecognizer {
             self.presenter?.onShowAllEmployeeTapped()
+        }
+        
+        self.btnApiOne.addTapGestureRecognizer {
+            self.presenter?.onShowAPIOne()
+        }
+        
+        self.btnApiTwo.addTapGestureRecognizer {
+            self.presenter?.onShowAPITwo()
         }
     }
     

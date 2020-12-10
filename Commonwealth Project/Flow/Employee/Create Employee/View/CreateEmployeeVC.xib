@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEmployeeVC" customModule="Commonwealth_Project" customModuleProvider="target">
             <connections>
+                <outlet property="btnApiOne" destination="hHR-lg-DBk" id="uyx-id-ycn"/>
+                <outlet property="btnApiTwo" destination="KIe-1M-Y8v" id="Lg9-PJ-tn5"/>
                 <outlet property="btnCreateEmployee" destination="pCC-Gr-niV" id="lCR-6j-HRz"/>
                 <outlet property="btnShowAllEmployess" destination="zCF-FS-Dbk" id="Kfn-F7-J6l"/>
                 <outlet property="tfAge" destination="fTM-eB-ZUT" id="F9L-5e-Q0a"/>
@@ -104,13 +106,28 @@
                                 <constraint firstItem="pCC-Gr-niV" firstAttribute="centerX" secondItem="Fqv-ip-KnG" secondAttribute="centerX" id="u58-8p-WDB"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHR-lg-DBk">
+                            <rect key="frame" x="20" y="73.5" width="150" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="KWq-mF-up4"/>
+                            </constraints>
+                            <state key="normal" title="Another API One"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIe-1M-Y8v">
+                            <rect key="frame" x="241" y="73.5" width="114" height="30"/>
+                            <state key="normal" title="Another API Two"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.99917536969999998" green="0.75750464200000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="5jz-a1-bcu" secondAttribute="bottom" id="8fH-1C-pt6"/>
+                        <constraint firstItem="Fqv-ip-KnG" firstAttribute="top" secondItem="hHR-lg-DBk" secondAttribute="bottom" id="A5r-Ru-VUW"/>
                         <constraint firstAttribute="trailing" secondItem="Fqv-ip-KnG" secondAttribute="trailing" constant="30" id="D04-Eq-Iqb"/>
                         <constraint firstItem="5jz-a1-bcu" firstAttribute="leading" secondItem="Ocx-0J-JnE" secondAttribute="leading" id="PRG-II-NJj"/>
+                        <constraint firstItem="Fqv-ip-KnG" firstAttribute="top" secondItem="KIe-1M-Y8v" secondAttribute="bottom" id="PRM-DG-cAb"/>
                         <constraint firstAttribute="trailing" secondItem="5jz-a1-bcu" secondAttribute="trailing" id="VLu-GR-JrS"/>
+                        <constraint firstItem="hHR-lg-DBk" firstAttribute="leading" secondItem="Ocx-0J-JnE" secondAttribute="leading" constant="20" id="aNg-qe-vfa"/>
+                        <constraint firstAttribute="trailing" secondItem="KIe-1M-Y8v" secondAttribute="trailing" constant="20" id="bkW-3y-jmG"/>
                         <constraint firstItem="Fqv-ip-KnG" firstAttribute="centerY" secondItem="Ocx-0J-JnE" secondAttribute="centerY" constant="-30" id="cz5-SY-Stb"/>
                         <constraint firstItem="Fqv-ip-KnG" firstAttribute="leading" secondItem="Ocx-0J-JnE" secondAttribute="leading" constant="30" id="vvg-It-fZd"/>
                     </constraints>

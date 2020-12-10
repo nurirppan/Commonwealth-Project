@@ -58,7 +58,7 @@ class SourceAPIService: APIService {
     }
     
     func request(parameters: [String : Any], onSuccess: @escaping (SourceResponse) -> Void, onError: @escaping (HTTPError) -> Void) { // disini ke 6
-        self.httpClient.send(request: GetSources(parameters: parameters)) { (data) in
+        self.httpClient.sendOne(request: GetSources(parameters: parameters)) { (data) in
             do {
                 let model = try self.parse(data)
                 onSuccess(model)

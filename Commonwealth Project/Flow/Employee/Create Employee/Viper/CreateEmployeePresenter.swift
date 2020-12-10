@@ -24,6 +24,14 @@ final class CreateEmployeePresenter: Presenterable {
 }
 
 extension CreateEmployeePresenter: CreateEmployeeViewOutput {
+    func onShowAPIOne() {
+        dependencies.router.ShowApiOne()
+    }
+    
+    func onShowAPITwo() {
+        dependencies.router.ShowApiTwo()
+    }
+    
     func onShowAllEmployeeTapped() {
         dependencies.router.ShowAllEmployee()
     }

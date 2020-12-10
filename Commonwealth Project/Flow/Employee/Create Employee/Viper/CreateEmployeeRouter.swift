@@ -59,4 +59,12 @@ final class CreateEmployeeRouterOutput: Routerable {
         ListEmployeeRouterInput().push(from: view)
     }
     
+    func ShowApiOne() {
+        ListCategoryRouterInput().push(from: view)
+    }
+    
+    func ShowApiTwo() {
+        OrderListRouterInput().push(from: view)
+    }
+    
 }

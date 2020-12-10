@@ -84,6 +84,40 @@ class HTTPService {
         task.resume()
     }
     
+    func sendOne(request apiRequest: HTTPRequest, onSuccess: @escaping (Data) -> Void, onFailure: @escaping (HTTPError) -> Void) {
+        let request = apiRequest.request(with: self.identifier.baseUrlOne)
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { [self] (data, _, _) in
+            if HTTPReachability.isConnectedToNetwork() {
+                self.log(data: data, from: request)
+                if let data = data {
+                    onSuccess(data)
+                } else {
+                    onFailure(.internalError)
+                }
+            } else {
+                onFailure(.connectionLost)
+            }
+        })
+        task.resume()
+    }
+    
+    func sendTwo(request apiRequest: HTTPRequest, onSuccess: @escaping (Data) -> Void, onFailure: @escaping (HTTPError) -> Void) {
+        let request = apiRequest.request(with: self.identifier.baseUrlTwo)
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { [self] (data, _, _) in
+            if HTTPReachability.isConnectedToNetwork() {
+                self.log(data: data, from: request)
+                if let data = data {
+                    onSuccess(data)
+                } else {
+                    onFailure(.internalError)
+                }
+            } else {
+                onFailure(.connectionLost)
+            }
+        })
+        task.resume()
+    }
+    
     private func log(data: Data?, from urlRequest: URLRequest) {
         if let data = data {
             print("\n=====HTTPResponse=====")
