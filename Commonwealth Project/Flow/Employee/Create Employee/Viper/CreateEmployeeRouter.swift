@@ -55,4 +55,8 @@ final class CreateEmployeeRouterOutput: Routerable {
         self.view = view
     }
     
+    func ShowAllEmployee() {
+        ListEmployeeRouterInput().push(from: view)
+    }
+    
 }

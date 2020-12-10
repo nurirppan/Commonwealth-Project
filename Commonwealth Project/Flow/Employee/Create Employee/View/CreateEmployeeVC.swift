@@ -15,26 +15,49 @@ class CreateEmployeeVC: UIViewController {
     
     private let hud = JGProgressHUD(style: .dark)
     
-    private var orders = [ListOfMedication]()
+    private var createEmployee: CreateEmployeeRequest?
     
-
+    @IBOutlet weak var tfName: UITextField!
+    @IBOutlet weak var tfSalary: UITextField!
+    @IBOutlet weak var tfAge: UITextField!
+    @IBOutlet weak var btnCreateEmployee: UIButton!
+    @IBOutlet weak var btnShowAllEmployess: UILabel!
+    
+    var name: String { return self.tfName.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
+    var salary: String { return self.tfSalary.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
+    var age: String { return self.tfAge.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""}
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.setupActions()
     }
     
     private func setupUI() {
         self.setupLoading()
     }
-
+    
+    private func setupActions() {
+        self.btnCreateEmployee.addTapGestureRecognizer {
+            print("btnCreateEmployee")
+        }
+        
+        self.btnShowAllEmployess.addTapGestureRecognizer {
+            self.presenter?.onShowAllEmployeeTapped()
+        }
+    }
     
     private func setupLoading() {
         hud.vibrancyEnabled = true
         hud.indicatorView = JGProgressHUDIndeterminateIndicatorView()
         hud.textLabel.text = "Loading"
     }
-
-
+    
+    
 }
 
 extension CreateEmployeeVC {
@@ -63,7 +86,7 @@ extension CreateEmployeeVC {
 }
 
 extension CreateEmployeeVC: CreateEmployeeViewInput {
-
+    
     func onViewState(_ state: BasicUIState) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }

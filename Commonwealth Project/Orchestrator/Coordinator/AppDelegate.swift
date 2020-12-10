@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = UINavigationController()
         window!.makeKeyAndVisible()
         
-        OrderListRouterInput().setRoot(rootController)
+        CreateEmployeeRouterInput().setRoot(rootController)
         return true
     }
 
