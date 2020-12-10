@@ -14,6 +14,8 @@
 		0E5DB56E2581E8E800397EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5DB56C2581E8E800397EB2 /* LaunchScreen.storyboard */; };
 		0E5DB5792581E8E900397EB2 /* Commonwealth_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5DB5782581E8E900397EB2 /* Commonwealth_ProjectTests.swift */; };
 		0E5DB5842581E8E900397EB2 /* Commonwealth_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5DB5832581E8E900397EB2 /* Commonwealth_ProjectUITests.swift */; };
+		0EBD43B52581FA6200344AF3 /* ListEmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD43B32581FA6200344AF3 /* ListEmployeeCell.swift */; };
+		0EBD43B62581FA6200344AF3 /* ListEmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD43B42581FA6200344AF3 /* ListEmployeeCell.xib */; };
 		0ED3BCBB2581E9EB008AF9FD /* ListOfMedicationAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BCA22581E9EB008AF9FD /* ListOfMedicationAPIService.swift */; };
 		0ED3BCBC2581E9EB008AF9FD /* ListOfMedicationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BCA32581E9EB008AF9FD /* ListOfMedicationResponse.swift */; };
 		0ED3BCBD2581E9EB008AF9FD /* MedicationDetailQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3BCA52581E9EB008AF9FD /* MedicationDetailQuery.swift */; };
@@ -152,6 +154,8 @@
 		0E5DB57F2581E8E900397EB2 /* Commonwealth ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commonwealth ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5DB5832581E8E900397EB2 /* Commonwealth_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commonwealth_ProjectUITests.swift; sourceTree = "<group>"; };
 		0E5DB5852581E8E900397EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EBD43B32581FA6200344AF3 /* ListEmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEmployeeCell.swift; sourceTree = "<group>"; };
+		0EBD43B42581FA6200344AF3 /* ListEmployeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListEmployeeCell.xib; sourceTree = "<group>"; };
 		0ED3BCA22581E9EB008AF9FD /* ListOfMedicationAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMedicationAPIService.swift; sourceTree = "<group>"; };
 		0ED3BCA32581E9EB008AF9FD /* ListOfMedicationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMedicationResponse.swift; sourceTree = "<group>"; };
 		0ED3BCA52581E9EB008AF9FD /* MedicationDetailQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDetailQuery.swift; sourceTree = "<group>"; };
@@ -345,6 +349,15 @@
 				0E5DB5852581E8E900397EB2 /* Info.plist */,
 			);
 			path = "Commonwealth ProjectUITests";
+			sourceTree = "<group>";
+		};
+		0EBD43B22581F9BD00344AF3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0EBD43B32581FA6200344AF3 /* ListEmployeeCell.swift */,
+				0EBD43B42581FA6200344AF3 /* ListEmployeeCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0ED3BC9F2581E9EB008AF9FD /* API */ = {
@@ -843,6 +856,7 @@
 		0ED3BDE82581F48E008AF9FD /* List Employee */ = {
 			isa = PBXGroup;
 			children = (
+				0EBD43B22581F9BD00344AF3 /* Cell */,
 				0ED3BDF72581F4BE008AF9FD /* Viper */,
 				0ED3BDE92581F497008AF9FD /* View */,
 			);
@@ -1001,6 +1015,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED3BD232581E9F3008AF9FD /* OrderDetailCustomerCell.xib in Resources */,
+				0EBD43B62581FA6200344AF3 /* ListEmployeeCell.xib in Resources */,
 				0ED3BD372581E9F3008AF9FD /* ListSourceVC.xib in Resources */,
 				0ED3BD252581E9F3008AF9FD /* OrderDetailPrescriptionCell.xib in Resources */,
 				0E5DB56E2581E8E800397EB2 /* LaunchScreen.storyboard in Resources */,
@@ -1215,6 +1230,7 @@
 				0ED3BD662581EA06008AF9FD /* CurrencyFormatter.swift in Sources */,
 				0ED3BCC42581E9EB008AF9FD /* HeadlineResponse.swift in Sources */,
 				0ED3BDFE2581F4F6008AF9FD /* ListEmployeePresenter.swift in Sources */,
+				0EBD43B52581FA6200344AF3 /* ListEmployeeCell.swift in Sources */,
 				0ED3BD6E2581EA06008AF9FD /* ScheduleProvider.swift in Sources */,
 				0ED3BCC82581E9EB008AF9FD /* HTTPRequest.swift in Sources */,
 				0ED3BDC92581F28A008AF9FD /* CreateEmployeePresenter.swift in Sources */,

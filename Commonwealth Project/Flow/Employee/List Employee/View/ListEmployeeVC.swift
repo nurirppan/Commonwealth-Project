@@ -17,6 +17,8 @@ class ListEmployeeVC: UIViewController {
     
     private var orders = [ListOfMedication]()
     
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewWillAppear(_ animated: Bool) {
         self.setupTitleForNavigation(title: "Employee List")
     }
